@@ -24,7 +24,7 @@ app/config/config.js
 
 ```
 "development": {
-"database": "mongodb://garbanzo-mongo/garbanzo_development",
+"database": "mongodb://garbanzo_mongo_1/garbanzo_development",
 "httpPort":5000,
 "jsonWebTokenSecret":"secret",
 "jsonWebTokenExpiresIn":"1h",

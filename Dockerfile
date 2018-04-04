@@ -2,6 +2,11 @@
 # docker run -p 27017:27017 --name garbanzo-mongo -d mongo
 # docker run -d -p 5000:5000 --link garbanzo-mongo:mongo --name garbanzo  matthewshirtliffecouk/garbanzo
 
+# docker build -f Dockerfile -t matthewshirtliffecouk/garbanzo .
+# docker network create --driver bridge garbanzo_network
+# docker run -d --net=garbanzo_network -p 27017:27017 --name garbanzo-mongo -d mongo
+# docker run -d --net=garbanzo_network -p 5000:5000 --name garbanzo  matthewshirtliffecouk/garbanzo
+
 FROM node:latest
 
 MAINTAINER Matthew Shirtliffe
