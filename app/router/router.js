@@ -50,7 +50,7 @@ var routes = function (User,Task) {
             });
 
         });
-        
+
     });
 
     router.route('/authenticate').post(function (req, res) {
@@ -84,7 +84,9 @@ var routes = function (User,Task) {
 
     });
 
-    router.route('/token-password-reset').post(function (req, res) {
+    router.route('/password-reset').post(function (req, res) {
+        // email with url and token
+        // post with token and new password
         res.status(200).send('Hello');
     });
 
@@ -201,5 +203,3 @@ var routes = function (User,Task) {
 }
 
 module.exports = routes;
-
-
